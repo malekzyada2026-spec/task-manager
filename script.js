@@ -10,6 +10,9 @@ function addTask() {
 
     li.innerHTML = `
         ${input.value}
+        <button onclick="this.parentElement.classList.toggle('completed')">
+           Complete
+        </button>
         <button onclick="this.parentElement.remove()">Delete</button>
     `;
 
